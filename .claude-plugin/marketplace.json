@@ -1,0 +1,31 @@
+{
+  "name": "pado-skills",
+  "owner": { "name": "WRL-SPR" },
+  "metadata": {
+    "description": "Pado가 고른 에이전트 스킬 모음. 한국어 팀을 위한 스킬과 추천 스킬을 담았어요.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "korean",
+      "description": "한국어 스킬 팩: UI 문구와 문서, 커밋과 PR, 코드 리뷰, 개인정보 점검",
+      "source": "./plugins/korean",
+      "skills": [
+        "./skills/korean-ux-writing",
+        "./skills/korean-commit-pr",
+        "./skills/korean-code-review",
+        "./skills/korean-privacy-check"
+      ]
+    },
+    {
+      "name": "ponytail",
+      "description": "최소 수정과 군더더기 검토: 있는 코드와 표준 기능을 먼저 쓰고, 줄일 수 있는 부분을 찾아요",
+      "source": { "source": "github", "repo": "DietrichGebert/ponytail" }
+    },
+    {
+      "name": "security-audit",
+      "description": "보안 점검 (Cloudflare): 정찰, 탐색, 반박 검증, 보고서 순서로 보안 문제를 찾아요",
+      "source": { "source": "github", "repo": "cloudflare/security-audit-skill" }
+    }
+  ]
+}
